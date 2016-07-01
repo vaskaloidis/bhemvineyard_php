@@ -11,7 +11,7 @@ $optionCount = 0;
 $sql = "SELECT * FROM options";
 $sql2 = 'SELECT * FROM content';
 
-$conn = $system::database();
+$conn = $system->database();
 
 $query = $conn->query($sql);
 

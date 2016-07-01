@@ -11,7 +11,7 @@
 
 $sql = "SELECT * FROM content WHERE section='about'"; 
 
-$query = $system::database()->query($sql);
+$query = $system->database()->query($sql);
 
 $row = $query->fetch_assoc();
 

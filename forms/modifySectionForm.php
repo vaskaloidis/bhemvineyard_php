@@ -3,7 +3,7 @@
 
 echo '<form action="index.php" method="POST">';
 
-$conn = $system::database();
+$conn = $system->database();
 
 
 if(isset($_POST['section'])){  //edit post
@@ -14,7 +14,7 @@ if(isset($_POST['section'])){  //edit post
 		 	<script src="http://js.nicedit.com/nicEdit-latest.js" 
 					type="text/javascript">
 				</script>
-			<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+			<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas)</script>
 
 		  </script>';
 	}

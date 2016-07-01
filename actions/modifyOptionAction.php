@@ -3,7 +3,7 @@
 
 //$system = new system();
 
-$conn = $system::database();
+$conn = $system->database();
 
 
 $optionName = $_POST['optionName'];

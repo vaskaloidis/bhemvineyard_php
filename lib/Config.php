@@ -1,7 +1,7 @@
 <?php
 
 class Config{
-	public static $ini = array();
+	public $ini = array();
 
 	public function get($input){
    	 

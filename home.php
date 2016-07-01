@@ -3,11 +3,11 @@
 
             <?php
             
-            $query = $system::database()->query('SELECT * FROM content WHERE section="front_page_update_banner"');
+            $query = $system->database()->query('SELECT * FROM content WHERE section="front_page_update_banner"');
             
             $row = $query->fetch_assoc();
             
-            $query2 = $system::database()->query('SELECT * FROM options WHERE name="front_page_update_banner"');
+            $query2 = $system->database()->query('SELECT * FROM options WHERE name="front_page_update_banner"');
             
             $option = $query2->fetch_assoc();
             
@@ -24,7 +24,7 @@
 
 <?php $sql = "SELECT * FROM content WHERE section='home'"; 
 
-$query = $system::database()->query($sql);
+$query = $system->database()->query($sql);
 
 $row = $query->fetch_assoc();
 

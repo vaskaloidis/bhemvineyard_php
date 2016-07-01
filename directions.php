@@ -12,7 +12,7 @@
 
 $sql = "SELECT * FROM content WHERE section='directions'"; 
 
-$query = $system::database()->query($sql);
+$query = $system->database()->query($sql);
 
 $row = $query->fetch_assoc();
 

@@ -8,7 +8,7 @@
 
 class system {
     
-    public static $page;
+    public $page;
     
     public static $config;
     
@@ -16,14 +16,15 @@ class system {
         require_once 'Mobile_Detect.php';
         require_once 'Config.php';
         self::$config = new Config('./etc/config.ini');
+        // $this->page = '';
     }
     
     public function getPage(){
-        return self::$page;
+        return $this->page;
     }
     
     public function setPage($input){
-        self::$page = $input;
+        $this->page = $input;
     }
     
     public static function database(){
