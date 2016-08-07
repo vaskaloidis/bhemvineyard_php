@@ -19,7 +19,7 @@ if($alternate == 'alternate' || true){
 <div>
 <div class="row featurette">
         <img class="featurette-image <?= $featurette ?>" src="./img/rose.jpg">
-        <h2 class="featurette-heading">Rosé Cheer <span class="muted">$16.99</span></h2>
+        <h2 class="featurette-heading">Rosé<span class="muted">$16.99</span></h2>
         <p class="lead">Our Rosé is a blend of 3 estate grown grapes Cayuga, St Croix, and Traminette. It is lightly sweetened to enhance the fruity raspberry flavors on the palate.
 		</p>
 </div>

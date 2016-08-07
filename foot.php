@@ -3,7 +3,18 @@
 	
     <div class="span4">
       <h4 class="foot">The Vineyard</h4>
-      <p>We are open Saturday and Sunday from 1pm to 5pm on May 28 and 29 followed by June 4th and 5th. We will be opened each weekend in July, Aug, Sept, Oct and Dec. In November open 11/5 and 11/6.</p>
+      <p>
+        <?php 
+            $sql = "SELECT * FROM content WHERE section='hours'"; 
+
+            $query = $system->database()->query($sql);
+
+            $row = $query->fetch_assoc();
+
+            echo $row['content'];
+
+        ?>
+      </p>
       <p><a class="btn" href="index.php?about">About »</a></p>
     </div><!--/span-->
     <div class="span4">
