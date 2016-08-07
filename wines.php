@@ -70,7 +70,7 @@ if($alternate == 'alternate' || true){
         	Our Christmas Town Red is a smooth, fruity California Cabernet Sauvignon. The wine is garnet-colored with cherry and black currant aromas and bright cherry flavor on the palate. Once a viniferous mystery, the parentage of the Cabernet Sauvignon grape was discovered through DNA Profiling in 1997. </p>
 		<p class="lead">
 			As it turns out, the Cabernet Sauvignon grape is the result of the spontaneous crossing of the red wine grape Cabernet Franc and the white wine grape Sauvignon Blanc, probably in the 1700’s.</p>
-		<p style="margin-left:350px" class="lead">
+		<p style="margin-left:330px" class="lead">
 			BUY NOW<br>
 			Pick up at winery by appointment.<br>
 			Free delivery within 25 miles for purchases of $ 75 or more.<br>
