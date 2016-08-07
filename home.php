@@ -7,15 +7,9 @@
             
             $row = $query->fetch_assoc();
             
-            $query2 = $system->database()->query('SELECT * FROM options WHERE name="front_page_update_banner"');
-            
-            $option = $query2->fetch_assoc();
-            
             echo '<div class="homeBanner">';
 
-            if($option['value'] == true){
-                echo '<strong> ' . $row['content'] . '</strong>';
-            }
+            echo '<strong> ' . $row['content'] . '</strong>';
 
             $sql = "SELECT * FROM content WHERE section='hours'"; 
 
