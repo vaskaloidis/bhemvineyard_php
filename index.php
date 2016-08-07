@@ -60,6 +60,7 @@ if(isset($_POST['form'])){
 		
 		require $system->getDir() . 'head.php';
 		require $system->getDir() . 'home.php';
+		require $system->getDir() . 'wines.php';
 	} else if(isset($_GET['admin'])){
 		$pgae = 'Admin';
 		require $system->getDir() . 'head.php';
@@ -67,29 +68,25 @@ if(isset($_POST['form'])){
 	} else if(isset($_GET['wine'])){
 		$system->setPage('Wine');
 		require $system->getDir() . 'head.php';
+		echo '<h2 class="muted nobreak">Wine</h2>';
 		require $system->getDir() . 'wines.php';
 	} else if(isset($_GET['about'])){
 		$system->setPage('About');
-		
 		require $system->getDir() . 'head.php';
 		require $system->getDir() . 'about.php';
 	} else if(isset($_GET['contact'])){
 		$system->setPage('Contact');
-		
 		require $system->getDir() . 'head.php';
 		require $system->getDir() . 'contact.php';
 	} else if(isset($_GET['directions'])){
 		$system->setPage('Directions');
-		
 		require $system->getDir() . 'head.php';
 		require $system->getDir() . 'directions.php';
 	} else if(isset($_GET['photo'])){
 		$system->setPage('Home');
-		
 		require 'photos.php';
 	}else if(isset($_GET['success'])){
 		$system->setPage('Successful Purchase');
-		
 		require $system->getDir() . 'head.php';
 		require $system->getDir() . 'success.php';
 	}else if(isset($_GET['photos'])){

@@ -43,6 +43,3 @@ echo $row['content'];
 ?>
 	
 </div>
-
-      <?php $content->Get_Wines(); ?>
-<br />
