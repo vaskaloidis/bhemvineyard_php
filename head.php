@@ -137,3 +137,14 @@ if(isset($_GET['directions'])){ ?>
 
 <div class="container">
     <br />
+
+<?php if($alertMessage) {
+	echo '<div class="alert alert-success">' . $alertMessage . '</div>';
+	
+}
+
+if($alertError) {
+	echo '<div class="alert alert-danger">' . $alertError . '</div>';
+}
+
+    

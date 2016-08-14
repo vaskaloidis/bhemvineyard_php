@@ -52,11 +52,11 @@
 
     <div class="container">
 
-      <form action ="loginAction.php" method="POST" class="form-signin">
+      <form action ="index.php" method="POST" class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
         <input name="username" type="text" class="input-block-level" placeholder="Username">
         <input name="password" type="password" class="input-block-level" placeholder="Password">
-		<input type="hidden" name="loginSubmitted" value="TRUE">
+		    <input type="hidden" name="loginSubmitted" value="TRUE">
         <button class="btn btn-large btn-primary" type="submit">Sign in</button>
       </form>
 

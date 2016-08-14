@@ -36,7 +36,7 @@
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2013 Bethlehem Vineyard, Inc. &middot; 
 			<?php if($admin!=true){ ?><a href="./login.php">Login</a><?php } else { ?>
-				<a href="./logout.php">Logout</a> <?php } ?>
+				<a href="index.php?logout">Logout</a> <?php } ?>
 		</p>
       </footer>
 

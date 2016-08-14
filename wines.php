@@ -5,11 +5,9 @@
 	<br /><br />
 	<?php
 
-if($alternate == 'alternate' || true){
-    $featurette = 'pull-right';
-} else {
-    $featurette = 'pull-left';
-}
+// if($alternate == 'alternate' || true){ } else { $featurette = 'pull-left'; }
+$featurette = 'pull-right';
+
 ?>
 <div>
 <div class="row featurette">
