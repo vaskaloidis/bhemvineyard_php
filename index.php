@@ -21,7 +21,9 @@ if(isset($_POST['loginSubmitted'])){
 			require $system->getDir() . 'admin.php';
 		}
 	} else {
-		echo '<div class="alert alert-failure">Incorrect Username or Password</div>';
+		require $system->getDir() . 'head.php';
+		echo '<div class="alert alert-danger">Incorrect Username or Password</div>';
+		require $system->getDir() . 'home.php';
 	}
 
 } elseif(isset($_POST['form'])){
