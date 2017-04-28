@@ -1,4 +1,4 @@
-<?php 
+<?php
 require 'lib/content.php';
 require 'lib/Config.php';
 require 'lib/system.php';
@@ -15,7 +15,7 @@ if(isset($_POST['loginSubmitted'])){
 	if($_POST['username']==$config->get('username')){
 		if($_POST['password']==$config->get('password')){
 			$_SESSION['admin'] = TRUE;
-			$alertMessage = "You ahve logged-in succesfully!";
+			$alertMessage = "You have logged-in succesfully!";
 			$pgae = 'Admin';
 			require $system->getDir() . 'head.php';
 			require $system->getDir() . 'admin.php';
@@ -29,48 +29,48 @@ if(isset($_POST['loginSubmitted'])){
 } elseif(isset($_POST['form'])){
 
     if(isset($_POST['section'])){
-        
+
         $admin = true;
-        
+
         $page = 'Admin';
 
         require $system->getDir() . 'head.php';
-		
+
         require $system->getDir() . 'forms/modifySectionForm.php';
 
-    }	 
+    }
 } elseif(isset($_POST['action'])){
 
 	$action = $_POST['action'];
-	
+
 	if($action == 'edit'){
-		
+
 		if(isset($_POST['section'])){
-						
+
 			$page = 'Modify Section';
-			
+
 			require $system->getDir() . 'head.php';
-			
+
 			require $system->getDir() . 'actions/modifySectionAction.php';
-			
+
 		} elseif(isset($_POST['optionID'])){
-			
+
 			$page = 'Modify Options';
-			
+
 			require $system->getDir() . 'head.php';
-			
+
 			require $system->getDir() . 'actions/modifyOptionAction.php';
 		}
 
 	}
 	echo '<h2>Update successful!</h2><br />';
-	
+
 	echo '<br />Return to <a href="' . $system->getUrl() . 'index.php?admin' . '">Admin section</a>';
 	echo '<br />Return to <a href="' . $system->getUrl() . 'index.php?home">Bethlehem Vineyard Website</a><br />';
-} elseif(!isset($_GET)  
-		|| empty($_GET) 
+} elseif(!isset($_GET)
+		|| empty($_GET)
 		|| isset($_GET['home'])) {  //Home
-		$system->setPage('Home');		
+		$system->setPage('Home');
 		require $system->getDir() . 'head.php';
 		require $system->getDir() . 'home.php';
 		require $system->getDir() . 'wines.php';
@@ -115,9 +115,9 @@ if(isset($_POST['loginSubmitted'])){
 		require $system->getDir() . 'photos.php';
 
 	} else if(isset($_GET['logout'])) { //Logout
-		require $system->getDir() . 'logout.php';	
+		require $system->getDir() . 'logout.php';
 		$system->setPage('Home');
-		
+
 		$alertMessage = "You have logged-out succesfully";
 
 		require $system->getDir() . 'head.php';
@@ -130,7 +130,7 @@ if(isset($_POST['loginSubmitted'])){
 		echo 'Web page cannot be found. <a href="?home>"Go Home.</a>';
 		echo '</div>';
 	}
-        
+
 
 ?>
 <br />
