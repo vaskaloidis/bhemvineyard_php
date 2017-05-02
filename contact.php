@@ -1,9 +1,10 @@
 <br />
 <br />
 <div class="content">
-	
-<?php 
-    $sql = "SELECT * FROM content WHERE section='contact'"; 
+
+	<p class="lead">
+<?php
+    $sql = "SELECT * FROM content WHERE section='contact'";
 
     $query = $system->database()->query($sql);
 
@@ -12,10 +13,10 @@
     echo $row['content'];
 
 ?>
-
-<font size="3" style="line-height: 18px;"><b><i>
-<?php 
-    $sql = "SELECT * FROM content WHERE section='hours'"; 
+</p>
+<font class="lead" size="3" style="line-height: 18px;"><b><i>
+<?php
+    $sql = "SELECT * FROM content WHERE section='hours'";
 
     $query = $system->database()->query($sql);
 

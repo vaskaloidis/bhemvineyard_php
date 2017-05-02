@@ -9,10 +9,11 @@
 
 <h2 class="nobreak">Directions</h2><br />
 
+<font class="lead" >
 
-<?php 
+<?php
 
-$sql = "SELECT * FROM content WHERE section='directions'"; 
+$sql = "SELECT * FROM content WHERE section='directions'";
 
 $query = $system->database()->query($sql);
 
@@ -21,11 +22,13 @@ $row = $query->fetch_assoc();
 echo $row['content'];
 
 ?>
+</font>
+<
 <br>
 
-<font size="3" style="line-height: 18px;"><b><i>
-<?php 
-    $sql = "SELECT * FROM content WHERE section='hours'"; 
+<font class="lead" size="3" style="line-height: 18px;"><b><i>
+<?php
+    $sql = "SELECT * FROM content WHERE section='hours'";
 
     $query = $system->database()->query($sql);
 
